@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookGallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bacasime+Antique&family=Josefin+Sans&family=Lilita+One&family=Lumanosimo&family=Oswald&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-md-5 " href="#" style="font-size: 1.5rem; font-family: 'Josefin Sans', sans-serif; color: white; font-weight: bold;"><i class="fa-solid fa-book me-2"></i>The Book Library</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent1" style="z-index: 3;">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown me-2">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                  Language
+                </a>
+                <ul class="dropdown-menu" style="z-index: 5;">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Italian</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link active text-white" aria-current="page" href="#" ><i class="fa-solid fa-user"></i></a>
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link active text-white" aria-current="page" href="#" ><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg " style="background-color: #000000;" id="nav1" >
+        <div class="container-fluid">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: white;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active m-md-3 text-white" aria-current="page" href="#novel">Novels</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active m-md-3 text-white" aria-current="page" href="#novel">Stories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active m-md-3 text-white" aria-current="page" href="#story">Short Stories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active m-md-3 text-white" aria-current="page" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active m-md-3 text-white" aria-current="page" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active m-md-3 text-white" aria-current="page" href="#authors">Authors</a>
+              </li>
+            </ul>
+            <form class="d-flex m-md-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success text-white" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="landing d-flex flex-column justify-content-center align-items-center">
+        <div class="ord d-flex flex-column justify-content-center align-items-center rounded-5 mt-5">
+           
+                <a href="" class="btn p-3 mt-5 rounded-5" style="background-color: #ffffff; font-size: 2rem; color: #000000; font-weight: 500; "> ORDER NOW</a>
+        </div>
+      </div>
+      <div class="delivery d-flex justify-content-center align-items-center">
+        <h1><span style="color: orange;">|</span>FREE HOME DELIVERY </h1>
+      </div>
+      <div class="row g-0 d-flex" id="novel">
+        <div class="col-3">
+            <img class="galleryimg" src="https://images.unsplash.com/photo-1600189261867-30e5ffe7b8da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="" width="100%" height="100%"  id="img1">
+            <div class="text " style="width: 240PX;"><h3 style=" font-family: 'Oswald', sans-serif; font-size: 2rem; margin-left: 10%;">HARRY POTTER</h3>
+                <H6 class="mt-2 text-center" style="margin-left:-20px ;">Complete collection</H6>
+                <a href="" class="btn btn-success mt-2" style="margin-left: 30%;" id="btt" >BOOK</a>
+            </div>
+        </div>
+        <div class="col-3">
+            <img class="galleryimg" src="https://images.unsplash.com/photo-1643677841226-d6427625f118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="" width="100%" height="100%"
+            style="position: relative;">
+            <div class="text " style="width: 170PX;"><h3 style=" font-family: 'Oswald', sans-serif; font-size: 2rem; margin-left: 18%;">BAT MAN</h3>
+                <H6 class="mt-2 text-center" style="margin-left: 1%;">Complete collection</H6>
+                <a href="" class="btn btn-success mt-2" style="margin-left: 30%;" >BOOK</a>
+            </div>
+        </div>
+        <div class="col-3">
+            <img class="galleryimg" src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="" width="100%" height="100%"
+            style="position: relative;">
+            <div class="text " style="width: 170PX;"><h3 style=" font-family: 'Oswald', sans-serif; font-size: 2rem; margin-left: 8%;">SUPER MAN</h3>
+                <H6 class="mt-2 text-center" style="margin-left: 1%;">Complete collection</H6>
+                <a href="" class="btn btn-success mt-2" style="margin-left: 30%;" >BOOK</a>
+            </div>
+        </div>
+        <div class="col-3">
+            <img class="galleryimg" src="https://images.unsplash.com/photo-1519225924453-b28226426689?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="" width="100%" height="100%"
+            style="position: relative;">
+            <div class="text " style="width: 170PX;"><h3 style=" font-family: 'Oswald', sans-serif; font-size: 2rem; margin-left: 12%;">SHERLOCK </h3>
+                <H6 class="mt-2 text-center" style="margin-left: 1%;">Complete collection</H6>
+                <a href="" class="btn btn-success mt-2" style="margin-left: 30%;" >BOOK</a>
+            </div>
+        </div>
+
+      </div>
+      <div class="delivery d-flex justify-content-center align-items-center" id="story">
+        <h1><span style="color: orange;">|</span>BEST SELLERS </h1>
+      </div>
+      <div class="d-flex flex-row justify-content-evenly flex-wrap">
+        <div class="container1" style="width: 19rem; border: 1px solid white;">
+  
+         
+  
+          <div class="card" style="border: 1px solid white;">
+  
+              <div class="slide slide1">
+  
+                  <div class="content">
+                      <img src="https://images.unsplash.com/photo-1544210163-257effe9399e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="" width="100%">
+  
+                  </div>
+  
+              </div>
+  
+              <div class="slide slide2">
+  
+                  <div class="content">
+                  
+  
+                    <h3 class="text-danger"  >$100</h3>
+                    <a class="btn rounded-3" href="" style="background-color: rgb(0, 74, 0); color: white;">BUY NOW</a>
+                  </div>
+  
+              </div>
+  
+          </div>
+        </div>
+  
+          <div class="container1" style="width: 19rem; border: 1px solid white;">
+  
+         
+  
+            <div class="card" style="border: 1px solid white;">
+    
+                <div class="slide slide1">
+    
+                    <div class="content">
+                        <img src="https://images.unsplash.com/photo-1515098506762-79e1384e9d8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="" width="100%">
+    
+                    </div>
+    
+                </div>
+    
+                <div class="slide slide2">
+    
+                    <div class="content">
+    
+                      <h3 class="text-danger" >$150</h3>
+                      <a class="btn rounded-3" href="" style="background-color: rgb(0, 74, 0); color: white;">BUY NOW</a>
+                    </div>
+    
+                </div>
+    
+            </div>
+          </div>
+            <div class="container1" style="width: 19rem; border: 1px solid white;">
+  
+         
+  
+              <div class="card" style="border: 1px solid white;">
+      
+                  <div class="slide slide1">
+      
+                      <div class="content">
+                          <img src="https://images.unsplash.com/photo-1612969308146-066d55f37ccb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" width="100%">
+      
+                      </div>
+      
+                  </div>
+      
+                  <div class="slide slide2">
+      
+                      <div class="content">
+      
+                        <h3 class="text-danger"  >$100</h3>
+                        <a class="btn rounded-3" href="" style="background-color: rgb(0, 74, 0); color: white;">BUY NOW</a>
+                      </div>
+      
+                  </div>
+      
+              </div>
+            </div>
+              <div class="container1" style="width: 19rem; border: 1px solid white;">
+  
+         
+  
+                <div class="card" style="border: 1px solid white;">
+        
+                    <div class="slide slide1">
+        
+                        <div class="content">
+                            <img src="https://images.unsplash.com/photo-1521123845560-14093637aa7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" width="100%">
+        
+                        </div>
+        
+                    </div>
+        
+                    <div class="slide slide2">
+        
+                        <div class="content">
+        
+                          <h3 class="text-danger"  >$200</h3>
+                          <a class="btn rounded-3" href="" style="background-color: rgb(0, 74, 0); color: white;">BUY NOW</a>
+                        </div>
+        
+                    </div>
+        
+                </div>
+              </div>
+  
+      </div>
+      <div class="m-5">
+<p class="text-center">
+          <a class="btn" style="background-color: black; border-radius: 10px; color: #ffffff;" href=""> VIEW MORE</a>
+  
+</p>      </div>
+<div class="new d-flex flex-column align-items-center justify-content-center">
+  <h1 class="text-center text-white mt-5 pt-5 fa-3x">NEW ARRIVALS
+  </h1>
+  <a class="btn btn-light mt" href=""> BOOK</a>
+</div>
+<div class="delivery d-flex justify-content-center align-items-center">
+  <h1><span style="color: orange;">|</span>THE LEGENDERY WRITERS </h1>
+</div>
+<div class="legend d-flex justify-content-evenly mt-5 mb-5 flex-wrap" id="authors">
+  <div class = container2>
+    <div class = card>
+      <div class = image>
+        <img href = "#" src="https://nationaltoday.com/wp-content/uploads/2022/04/50-William-Shakespeare-1200x834.jpg" width="100%" height="215px">
+      </div>
+      <div class = content>
+        <h3>William Shakespeare</h3>
+        <p>William Shakespeare was an English playwright, poet and actor.</p>
+      </div>
+    </div>    
+  </div>
+
+  <div class = container2>
+    <div class = card>
+      <div class = image>
+        <img href = "#" src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2020/11/18/moscow-tolstoy-pixa-916934-1605650565.jpg?itok=9GQs8jVt" width="100%" height="215px">
+      </div>
+      <div class = content>
+        <h3>Leo Tolstoy</h3>
+        <p>Lev Nikolayevich Tolstoy was a Russian author best known for his novels War and Peace and Anna Karenina.</p>
+      </div>
+    </div>    
+  </div>
+
+  <div class = container2>
+    <div class = card>
+      <div class = image>
+        <img href = "#" src="https://www.mathrubhumi.com/image/contentid/policy:1.8703090:1688536171/New%20Project%20(1).jpg?$p=8a7b7b1&f=16x10&w=852&q=0.8" width="100%" height="215px">
+      </div>
+      <div class = content>
+        <h3>Vaikom Muhammad Basheer</h3>
+        <p>He was a writer, humanist, freedom fighter, novelist and short story writer.</p>
+      </div>
+    </div>    
+  </div>
+
+  <div class = container2>
+    <div class = card>
+      <div class = image>
+        <img href = "#" src="https://visitpalmsprings.com/wp-content/uploads/2022/01/walt-disney.jpg" width="100%" height="215px">
+      </div>
+      <div class = content>
+        <h3>Walt Disney</h3>
+        <p>Walter Elias Disney was an American animator, film producer and entrepreneur. </p>
+      </div>
+    </div>    
+  </div>
+</div>
+<div class="m-5">
+  <p class="text-center">
+            <a class="btn" style="background-color: black; border-radius: 10px; color: #ffffff;" href=""> VIEW MORE</a>
+    
+  </p>      </div>
+<div class="sub d-flex flex-column justify-content-center align-items-center">
+  <h4 class="text-white" style="padding-bottom: 30px;">Subscribe to The Book Library</h4>
+  <input type="text" placeholder="Your Email" style="border: 1px solid white; width: 300px; height: 40px;border-radius: 10px;">
+  <a class="btn btn-light mt-3" href="">SUBSCRIBE</a>
+
+</div>
+<div class="delivery d-flex justify-content-center align-items-center" id="blog">
+  <h2><span style="color: orange;">|</span>FOLLOW US ON INSTAGRAM </h2>
+  
+</div>
+<div class="d-flex justify-content-evenly flex-wrap">
+  <div class="mt-2" style="width: 22rem;">
+    <img src="https://unblast.com/wp-content/uploads/2020/05/Square-Book-Mockup-2.jpg" alt="" width="100%">
+  </div>
+  <div class="mt-2" style="width: 22rem;">
+    <img src="https://unblast.com/wp-content/uploads/2020/05/Square-Book-Mockup.jpg" alt="" width="100%">
+  </div>
+  <div class="mt-2" style="width: 22rem;">
+    <img src="https://resourceboy.com/wp-content/uploads/2022/07/7-square-book-mockups-in-various-shots-1.jpg" alt="" width="100%">
+  </div>
+  <div class="mt-2" style="width: 22rem;">
+    <img src="https://resourceboy.com/wp-content/uploads/2022/07/7-square-book-mockups-in-various-shots-6.jpg" alt="" width="100%">
+  </div>
+
+</div>
+<div class="footer" id="contact">
+  <div class="first" style="margin-left: 20px;">
+      <h5 class="mt-3" style="color: orangered;">ABOUT US</h5>
+      <h6 class="mt-3 text-white">Our Company</h6>
+      <h6 class="mt-3 text-white">Our Management</h6>
+      <h6 class="mt-3 text-white">Connections</h6>
+      <h6 class="mt-3 text-white">Annual Reports</h6>
+      <h6 class="mt-3 text-white">Our Network</h6>
+
+  </div>
+  <div class="col-md-4">
+      <h5 class="text-center mt-3" style="color: orangered; text-align: center;">SOCIAL MIDEA </h5>
+      <div class="d-flex justify-content-evenly mt-4">
+          <a href=""><i class="fa-brands fa-facebook fa-2x text-white"></i></a>
+          <a href=""><i class="fa-brands fa-instagram fa-2x text-white"></i></a>
+          <a href=""><i class="fa-brands fa-twitter fa-2x text-white"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp fa-2x text-white"></i></a>
+      </div>
+  </div>
+  <div class="bbb">
+      <h5 class="mt-3" style="color: orangered;">SERVICES</h5>
+      <h6 class="mt-3 text-white">Home Delivery</h6>
+      <h6 class="mt-3 text-white">Warrenty</h6>
+      <h6 class="mt-3 text-white">Home Service</h6>
+      <h6 class="mt-3 text-white">Annual caring</h6>
+    
+  </div>
+</div>
+<div class="bg-black mb-0">
+  <h6 class="text-center text-light mb-0">&copy;thebooklibrary 2023 | Developed by Vishnu Rajan</h6>
+</div>
+
+</div>
+    
+</body>
+</html>
